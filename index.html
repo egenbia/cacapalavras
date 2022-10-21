@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Matriz</title>
+</head>
+<body class="fundo">
+    <center>
+        <script>
+    
+        matriz = new Array;
+        matriz =[["S","F", "N", "T", "M", "G", "V", "J", "K", "T"],
+                 ["B","X", "E", "E", "E", "J", "E", "H", "G", "T"],
+                 ["V","X", "T", "R", "R", "U", "N", "C", "B", "Q"],
+                 ["C","S", "U", "R", "C", "P", "U", "S", "W", "J"],
+                 ["B","A", "N", "A", "U", "I", "S", "O", "X", "D"],
+                 ["W","T", "O", "C", "R", "T", "H", "L", "C", "C"],
+                 ["Y","U", "R", "S", "I", "E", "Z", "P", "H", "G"],
+                 ["H","R", "T", "C", "O", "R", "L", "U", "A", "N"],
+                 ["Y","N", "L", "X", "D", "M", "A", "R", "T", "E"],
+                 ["X","O", "Q", "D", "W", "U", "R", "A", "N", "O"]];
+
+
+        document.write(" <h1>SISTEMA SOLAR</h1> ")
+
+        document.write("<br>")
+
+        document.write("<table>");
+        for(linha = 0; linha < 10; linha++){
+            document.write("<tr>");
+            for(coluna = 0; coluna < 10; coluna++){
+                //SATURNO
+                if((coluna == 1) && ((linha >= 3) && (linha <= 10))){
+                    document.write("<td class='letra-corsat'>" + matriz[linha][coluna] + "</td>");
+                }
+                //NETUNO
+                else if((coluna == 2) && ((linha >= 0) && (linha <= 5))){
+                    document.write("<td class='letra-cornet'>" + matriz[linha][coluna] + "</td>");
+                }
+                //TERRA
+                else if((coluna== 3) && ((linha >= 0) && (linha <= 4))){
+                    document.write("<td class='letra-corter'>" + matriz[linha][coluna] + "</td>");
+                }
+                //MERCURIO
+                else if((coluna == 4) && ((linha >= 0) && (linha <= 7))){
+                    document.write("<td class='letra-cormer'>" + matriz[linha][coluna] + "</td>");
+                }
+                //JUPITER
+                else if((coluna == 5) && ((linha >= 1) && (linha <= 7))){
+                    document.write("<td class='letra-corjup'>" + matriz[linha][coluna] + "</td>");
+                }
+                //VENUS
+                else if((coluna ==6) && ((linha >= 0) && (linha <= 5))){
+                    document.write("<td class='letra-corven'>" + matriz[linha][coluna] + "</td>");
+                }
+                //SOL
+                else if((coluna == 7) && ((linha >= 3) && (linha <= 5))){
+                    document.write("<td class='letra-corsol'>" + matriz[linha][coluna] + "</td>");
+                }
+                //LUA
+                else if((linha == 7) && ((coluna >= 5) && (coluna <= 8))){
+                    document.write("<td class='letra-corlua'>" + matriz[linha][coluna] + "</td>");
+                }
+                //MARTE
+                else if((linha == 8) && ((coluna >= 5) && (coluna <= 9))){
+                    document.write("<td class='letra-cormarte'>" + matriz[linha][coluna] + "</td>");
+                }
+                //URANO
+                else if((linha == 9) && ((coluna >= 5) && (coluna <= 9))){
+                    document.write("<td class='letra-coruran'>" + matriz[linha][coluna] + "</td>");
+                }
+                else{
+                    document.write("<td>" + matriz[linha][coluna] + "</td>");
+                }
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+        </script>
+
+     </center>
+
+</body>
+</html>

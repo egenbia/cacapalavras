@@ -1,0 +1,57 @@
+.fundo{
+    background-color: #98939c;
+}
+
+table, tr, td{
+    border: 1px solid;
+}
+
+td{
+    width: 45px;
+    height: 45px;
+    text-align: center;
+}
+
+.letra-cor{
+    background-color: #ad2920;
+}
+
+.letra-corsat{
+    background-color: #eebebb;
+}
+
+.letra-cornet{
+    background-color: #f09089;
+}
+
+.letra-corter{
+    background-color: #f87168;
+}
+
+.letra-cormer{
+    background-color: #ee3629;
+}
+
+.letra-corjup{
+    background-color: #e00043;
+}
+
+.letra-corven{
+    background-color: #b37a96;
+}
+
+.letra-corsol{
+    background-color: #ac190f;
+}
+
+.letra-corlua{
+    background-color: #b10f73;
+}
+
+.letra-cormarte{
+    background-color: #46203a;
+}
+
+.letra-coruran{
+    background-color: #cf0000;
+}
